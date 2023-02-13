@@ -1,0 +1,706 @@
+/* PC、スマホ共通スタイル */
+body {
+    font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+}
+
+
+/* PC用のスタイル */
+
+@media screen and (min-width: 768px) {
+
+    a {
+        text-decoration: none;
+    }
+
+    /* ヘッダー */
+    header {
+        padding-top: 10px;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 5);
+        background: linear-gradient(to bottom, rgb(0, 110, 0), rgb(0, 150, 0));
+    }
+
+    h1 a {
+        position: relative;
+        left: 45%;
+        font-size: 25px;
+        color: rgb(244, 244, 244);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 5);
+        font-family: 'Noto Serif Display', serif;
+        letter-spacing: 8px;
+    }
+
+    #search {
+        position: absolute;
+        top: 20px;
+        right: 10px;
+    }
+
+    .main-ul {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        margin-left: 70px;
+        margin-right: 70px;
+        list-style: none;
+        white-space: nowrap;
+    }
+
+    nav li {
+        margin-right: 5%;
+    }
+
+    .sub-li {
+        list-style: none;
+    }
+
+    nav a {
+        color: rgb(255, 248, 248);
+        font-size: 17px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 5);
+    }
+
+    nav a:hover {
+        border-bottom: solid 1px;
+        padding-bottom: 5px;
+    }
+
+    #back-btn {
+        display: none;
+
+        padding: 40px 10px;
+        background-color: rgb(150, 150, 150);
+        color: white;
+        text-decoration: none;
+        border-radius: 50%;
+
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+
+        z-index: 1;
+    }
+
+    /*----------------------------------------------------------*/
+
+    /* 画像 */
+    .images {
+        width: 80px;
+        height: 70px;
+    }
+
+    /* main */
+    .category {
+        color: rgb(60, 60, 60);
+        font-size: 2rem;
+        position: relative;
+        margin-left: 14%;
+        margin-top: 70px;
+    }
+
+    /* パンくずリスト */
+    .pan {
+        margin-top: 10px;
+        margin-left: 14%;
+        font-size: 12px;
+    }
+
+    .pan a {
+        color: rgb(57, 57, 255);
+    }
+
+    /*------------------------------------------------------------*/
+
+    /* 記事 */
+    .new-article {
+        position: absolute;
+        top: 250px;
+        margin-left: max(1020px, 77%);
+        padding-right: 160px;
+        padding-bottom: 500px;
+        border: solid 1px rgb(80, 80, 80);
+        border-radius: 10px;
+    }
+
+    #first {
+        color: rgb(50, 50, 50);
+        font-size: 1.2rem;
+        white-space: nowrap;
+    }
+
+    .category-article {
+        position: absolute;
+        top: 1000px;
+        margin-left: max(1020px, 77%);
+        padding-right: 100px;
+        padding-bottom: 500px;
+        border: solid 1px rgb(80, 80, 80);
+        border-radius: 10px;
+    }
+
+
+    /*------------------------------------------------------------*/
+
+    /* body top */
+    .title {
+        color: rgb(50, 50, 50);
+        font-size: 1.8rem;
+        position: relative;
+        margin-top: 2%;
+        margin-left: 15%;
+    }
+
+    .title2 {
+        color: rgb(50, 50, 50);
+        font-size: 1.8rem;
+        position: relative;
+        margin-top: 8%;
+        margin-left: 15%;
+    }
+
+
+    .link {
+        display: inline-block;
+        margin-top: 5%;
+        margin-left: 17%;
+        padding: 10px;
+        background-color: rgb(230, 250, 255);
+        min-width: 250px;
+        max-width: 32px;
+        width: 20%;
+
+        border: 1px solid #ccc;
+
+        background: linear, left top, left bottom, (#fdfbfb), (#ebedee);
+        background: -webkit-linear-gradient(top, #fdfbfb 0%, #ebedee 100%);
+        background: linear-gradient(to bottom, #fdfbfb 0%, #ebedee 100%);
+        -webkit-box-shadow: inset 1px 1px 1px #fff;
+        box-shadow: inset 1px 1px 1px #fff;
+
+    }
+
+    .link:hover {
+        background: linear, left bottom, left top, (#fdfbfb), (#ebedee);
+        background: -webkit-linear-gradient(bottom, #fdfbfb 0%, #ebedee 100%);
+        background: linear-gradient(to top, #fdfbfb 0%, #ebedee 100%);
+    }
+
+
+
+    .link-2 {
+        display: inline-block;
+        margin-top: 5%;
+        margin-left: 4%;
+        padding: 10px;
+        background-color: rgb(230, 250, 255);
+        min-width: 250px;
+        max-width: 32px;
+        width: 20%;
+
+        border: 1px solid #ccc;
+        background: linear, left top, left bottom, (#fdfbfb), (#ebedee);
+        background: -webkit-linear-gradient(top, #fdfbfb 0%, #ebedee 100%);
+        background: linear-gradient(to bottom, #fdfbfb 0%, #ebedee 100%);
+        -webkit-box-shadow: inset 1px 1px 1px #fff;
+        box-shadow: inset 1px 1px 1px #fff;
+    }
+
+
+    .link-2:hover {
+        background: linear, left bottom, left top, (#fdfbfb), (#ebedee);
+        background: -webkit-linear-gradient(bottom, #fdfbfb 0%, #ebedee 100%);
+        background: linear-gradient(to top, #fdfbfb 0%, #ebedee 100%);
+    }
+
+    .container {
+        display: flex;
+    }
+
+
+    .item {
+        color: rgb(50, 50, 50);
+        font-size: 25px;
+        min-width: 20px;
+        position: relative;
+        top: 20px;
+        left: 20%;
+    }
+
+    .item2 {
+        color: rgb(50, 50, 50);
+        font-size: 25px;
+        min-width: 20px;
+        position: relative;
+        top: 4px;
+        left: 15%;
+    }
+
+    .item3 {
+        color: rgb(50, 50, 50);
+        font-size: 25px;
+        min-width: 20px;
+        position: relative;
+        top: 20px;
+        left: 15%;
+    }
+
+    .item4 {
+        color: rgb(50, 50, 50);
+        font-size: 25px;
+        min-width: 20px;
+        position: relative;
+        top: 4px;
+        left: 10%;
+    }
+
+    .item6 {
+        color: rgb(50, 50, 50);
+        font-size: 25px;
+        min-width: 20px;
+        position: relative;
+        top: 20px;
+        left: 8%;
+    }
+
+    /*------------------------------------------------------------*/
+    /* body list  */
+    .list {
+        color: rgb(50, 50, 50);
+        font-size: 1.6rem;
+        position: relative;
+        margin-top: 5%;
+        margin-left: 15%;
+    }
+
+    .list-2 {
+        color: rgb(50, 50, 50);
+        font-size: 1.6rem;
+        position: relative;
+        margin-top: 15%;
+        margin-left: 15%;
+    }
+
+    .hr {
+        width: 50%;
+        min-width: 600px;
+        position: relative;
+        left: 12%;
+        top: 3px;
+        height: 1.5px;
+        background-color: rgb(240, 168, 0);
+        border: none;
+        border-radius: 50px;
+    }
+
+    /*------------------------------------------------------------*/
+
+    .table {
+        border-collapse: separate;
+        border-spacing: 0;
+        margin-top: 20px;
+        margin-left: 15%;
+        margin-right: 35%;
+        width: 60%;
+        max-width: 680px;
+        min-width: 650px;
+    }
+
+    table th {
+        text-align: center;
+        color: white;
+        background: linear-gradient(#829ebc, #225588);
+        border-left: 1px solid #3c6690;
+        border-top: 1px solid #3c6690;
+        border-bottom: 1px solid #3c6690;
+        width: 20%;
+        white-space: nowrap;
+    }
+
+    table td {
+        font-size: 13px;
+        text-align: center;
+        border-left: 1px solid #a8b7c5;
+        border-bottom: 1px solid #a8b7c5;
+        border-top: none;
+        padding: 20px 0;
+    }
+
+
+
+    table th:first-child {
+        border-radius: 5px 0 0 0;
+    }
+
+    table th:last-child {
+        border-radius: 0 5px 0 0;
+        border-right: 1px solid #3c6690;
+    }
+
+    table td:last-child {
+        border-right: 1px solid #a8b7c5;
+    }
+
+    table tr:last-child td:first-child {
+        border-radius: 0 0 0 5px;
+    }
+
+    table tr:last-child td:last-child {
+        border-radius: 0 0 5px 0;
+    }
+
+    ul li {
+        white-space: nowrap;
+    }
+
+
+
+    .official-site {
+        text-align: center;
+        border-radius: 5px;
+        padding: 30px;
+        margin-top: 70px;
+        margin-left: 18%;
+        margin-right: 35%;
+        width: 50%;
+        max-width: 530px;
+        min-width: 500px;
+        color: #fff;
+        background-color: #eb6100;
+        border-bottom: 5px solid #b84c00;
+        -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+        box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+    }
+
+    .official-site:active {
+        cursor: pointer;
+        margin-top: 73px;
+        margin-left: 18%;
+        margin-right: 35%;
+        color: #fff;
+        background: #f56500;
+        border-bottom: 2px solid #b84c00;
+    }
+
+    .official-site:hover {
+        cursor: pointer;
+        color: #fff;
+        background: #f16d0e;
+    }
+
+    /*------------------------------------------------------------*/
+
+    /* list */
+    .list-category {
+        color: rgb(60, 60, 60);
+        font-size: 2rem;
+        position: relative;
+        margin-left: 14%;
+        margin-top: 40px;
+    }
+
+    .list-title {
+        color: rgb(50, 50, 50);
+        font-size: 1.8rem;
+        position: relative;
+        margin-top: 2%;
+        margin-left: 15%;
+    }
+
+
+    .list-images {
+        width: 200px;
+        height: 300px;
+    }
+
+    .list-a {
+        display: flex;
+        margin-top: 50px;
+        margin-left: 15%;
+    }
+
+    .list-li {
+        list-style: none;
+        max-width: 420px;
+        margin-bottom: 50px;
+        text-decoration: underline 2px;
+        text-decoration-color: rgb(255, 251, 135);
+        text-underline-offset: 5px;
+    }
+
+    /*------------------------------------------------------------*/
+
+
+    #footer {
+        color: aliceblue;
+        background-color: black;
+        margin-top: 100px;
+        position: relative;
+    }
+
+    #footer-item {
+        color: rgb(230, 250, 255);
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        padding-top: 50px;
+        margin-right: 120px;
+        margin-left: 100px;
+        /* padding-left: 10px; */
+    }
+
+    #copywrite {
+        padding-top: 70px;
+        margin-left: 40%;
+    }
+
+    /*------------------------------------------------------------*/
+
+    /* 問い合わせ */
+
+    #contact>h2 {
+        font-size: 25px;
+        margin-bottom: 50px;
+    }
+
+    /* お問い合わせ */
+    #contact {
+        margin: 50px 0 0 300px;
+    }
+
+    /* 外枠 */
+    #contact>form>div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+    }
+
+    /* 左列の見出し */
+    .contact-heading {
+        width: 240px;
+        align-self: center;
+    }
+
+    /* 見出しのラベル */
+    .contact-label {
+        font-weight: bold;
+    }
+
+
+    .contact-span {
+        color: red;
+    }
+
+    /* テキストボックス */
+    .contact-textbox {
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-bottom-width: 1px;
+        border-bottom-color: #707070;
+        border-bottom-style: solid;
+        background-color: #fafafa;
+        width: 400px;
+        height: 56px;
+    }
+
+    /* お問い合わせ内容のテキストエリア */
+    .contact-textarea {
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-bottom-width: 1px;
+        border-bottom-color: #707070;
+        border-bottom-style: solid;
+        background-color: #fafafa;
+        width: 400px;
+        height: 200px;
+    }
+
+    #submit {
+        font-size: 15px;
+        padding: 5px 10px 5px 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+
+    /*------------------------------------------------------------*/
+
+}
+
+/*====================
+スマートフォン用のスタイル
+=====================*/
+@media screen and (max-width: 768px) {
+
+    /* 問い合わせ */
+
+    #contact>h2 {
+        font-size: 25px;
+        margin-bottom: 50px;
+    }
+
+    /* お問い合わせ */
+    #contact {
+        margin: 50px 0 0 30px;
+    }
+
+    /* 外枠 */
+    #contact>form>div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+    }
+
+    /* 左列の見出し */
+    .contact-heading {
+        width: 240px;
+        align-self: center;
+    }
+
+    /* 見出しのラベル */
+    .contact-label {
+        font-weight: bold;
+    }
+
+
+    .contact-span {
+        color: red;
+    }
+
+    /* テキストボックス */
+    .contact-textbox {
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-bottom-width: 1px;
+        border-bottom-color: #707070;
+        border-bottom-style: solid;
+        background-color: #fafafa;
+        width: 400px;
+        height: 56px;
+    }
+
+    /* お問い合わせ内容のテキストエリア */
+    .contact-textarea {
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-bottom-width: 1px;
+        border-bottom-color: #707070;
+        border-bottom-style: solid;
+        background-color: #fafafa;
+        width: 400px;
+        height: 200px;
+    }
+
+    #submit {
+        font-size: 15px;
+        padding: 5px 10px 5px 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    /* ヘッダー */
+    header {
+        padding-top: 10px;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 5);
+        background: linear-gradient(to bottom, rgb(0, 110, 0), rgb(0, 150, 0));
+    }
+
+    h1 a {
+        position: relative;
+        left: 45%;
+        font-size: 25px;
+        color: rgb(244, 244, 244);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 5);
+        font-family: 'Noto Serif Display', serif;
+        letter-spacing: 8px;
+    }
+
+    #search {
+        position: absolute;
+        top: 20px;
+        right: 10px;
+    }
+
+    .main-ul {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        margin-left: 70px;
+        margin-right: 70px;
+        list-style: none;
+        white-space: nowrap;
+    }
+
+    nav li {
+        margin-right: 5%;
+    }
+
+    .sub-li {
+        list-style: none;
+    }
+
+    nav a {
+        color: rgb(255, 248, 248);
+        font-size: 17px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 5);
+    }
+
+    nav a:hover {
+        border-bottom: solid 1px;
+        padding-bottom: 5px;
+    }
+
+    #back-btn {
+        display: none;
+
+        padding: 40px 10px;
+        background-color: rgb(150, 150, 150);
+        color: white;
+        text-decoration: none;
+        border-radius: 50%;
+
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+
+        z-index: 1;
+    }
+
+
+    #footer {
+        color: aliceblue;
+        background-color: black;
+        margin-top: 100px;
+        position: relative;
+    }
+
+    #footer-item {
+        color: rgb(230, 250, 255);
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        padding-top: 50px;
+        margin-right: 120px;
+        margin-left: 100px;
+        /* padding-left: 10px; */
+    }
+
+    #copywrite {
+        padding-top: 70px;
+        margin-left: 40%;
+    }
+}
